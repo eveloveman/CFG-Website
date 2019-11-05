@@ -1,10 +1,10 @@
 body {
-  color: black;
+  color: blue;
   font-family: sans-serif;
   margin: 0px;
 }
 div {
-  min-height: 100vh;
+  min-height: 100vh;S
   width: 100vw;
 }
 h1, h2 {
