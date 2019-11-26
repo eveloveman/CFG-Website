@@ -1,0 +1,17 @@
+body{
+  margin: 0px
+}
+h1{
+font-family: Parkavenue;
+text-align: center;
+}
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+li:hover {
+  font-size: 1.2em;
+  transition: 0.6s ease;
+}
