@@ -1,37 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cambridge Survival Guide</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <title>My first site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css" >
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+      background-color: grey;
+     }
+  </style>
 </head>
 <body>
-  <div>
-    <h1>The Cambridge Survival Guide</h1>
 
-    <h2>Welcome to my site!</h2>
+    <h1>The Cambridge Survival Guide
+    <img src="Images/Cambridgecrest.png" width="200px">
+    </h1>
+    <h2>The Ultimate Guide</h2>
+    <div class="row button-div">
+      <button type="button" class="btn btn1-cambridge">Interviews</button>
+      <button type="button" class="btn btn2-cambridge">Vocab</button>
+      <button type="button" class="btn btn3-cambridge">Colleges</button>
+      <a href="./fancyformals.html" class="btn btn4-cambridge">Fancy Formals</a>
+      <button type="button" class="btn btn5-cambridge">How To Punt</button>
+    </div>
+    <div class="row">
+    </div>
 
-    <img src="duck.jpg" width="200px">
-  </div>
+    <h3>Putting Cambridge on the Map!!!!</h3>
+    <div id="map"></div>
+
+    <div>
+    <img src="Images/kingscollege.png" alt="Sunset Kings College" style="width:1000px;height:600px;">
+    </div>
   <div>
-    <p>I am currently learning to code with <a href= "www.codefirstgirls.org.uk">Code First Girls</a> Going over everything from how the
-      internet works, to creating websites and version control with git. A lot to cover in only 8 weeks!
-      Everyone should learn to code, here are some pretty good reasons why... </p>
-      <ol>
-        <li>HTML is cool</li>
-        <li>CSS is cooler</li>
-        <li>JS is the best</li>
-      </ol>
+    <p>Starting at the University of Cambridge?
+       Worried about what it will be like? This is the guide you need to make the transition easier!
+       Learn about fancy formals, the college system and how to punt! Oh so Cambridge........... </p>
   </div>
+
   <div class= "contrast">
-    <h2><em>What do you need to create a website?</em></h2>
+    <h2><em>
+    Come for a Visit!</em></h2>
 
-    <p>Not much!</p>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We will not share your email.</small>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Subscribe for the latest Cambridge Gossip!</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
-    <ul>
-      <li>A computer (always a good start)</li>
-      <li>A text editor (I am using atom)</li>
-      <li id="lower">A web browser (I am using chrome)</li>
-      <li id="lowest">Some HTML, CSS and JS files</li>
-    </ul>
   </div>
-      <a href="https://github.com/">Follow my progress on github</a>
+      <a href="https://github.com/">Follow us!</a>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+    function initMap (){
+      let Cambridge = {lat: 52.205276, lng: 0.119167};
+      let mapDiv = document.getElementById('map')
+      let mapOptions =  {
+        zoom: 10,
+        center: Cambridge
+      }
+      let map = new google.maps.Map(mapDiv, mapOptions);
+    }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
+
+  </body>
+</div>
+</html>
