@@ -1,0 +1,66 @@
+h1{
+  text-align: center;
+}
+
+.drawing img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 25px
+}
+
+.description p{
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: justify;
+}
+
+.container{
+  position: relative;
+  width: 80%;
+}
+
+.container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+
+.container .btn{
+  background-color: coral;
+  color: white;
+  font-size: 22px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-companies{
+  position: absolute;
+  top: 90%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  }
+
+.btn-routes{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  }
+
+  .btn-selfvsguided{
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .container .btn:hover {
+    background-color: black;
+  }
