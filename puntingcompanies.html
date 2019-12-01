@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>puntingcompanies</title>
+  <style>
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" href="styles/puntingcompanies.css">
+
+  <body>
+<h1>Punting Companies</h1>
+<p>There is a variety of companies in Cambridge offering punting tours. With the
+   following providers you can book guided punting tours:</p>
+<ul>
+  <li>
+    <a href="https://www.letsgopunting.co.uk/">Let's Go Punting</a>
+    </li>
+  <li>
+    <a href="https://www.cambridgepuntcompany.co.uk/">The Cambridge Punt Company</a>
+  </li>
+  <li>
+    <a href="https://www.cambridgepunters.com/">The Cambridge Punters</a>
+  </li>
+  </ul>
+  <p>There are also some companies offering guided tours and self-hire:</p>
+  <ul>
+    <li>
+      <a href="https://www.scudamores.com/">Scudamores</a>
+    </li>
+    <li>
+      <a href="https://puntingincambridge.com/">Granta</a>
+    </li>
+    <li>
+      <a href="http://www.punting-in-cambridge.co.uk/">Cambridge Chauffeur Punts</a>
+    </li>
+  </ul>
+  <div id="map"></div>
+   <script>
+    function initMap(){
+    let scudamores = {lat: 52.211, lng: 0.117};
+    let map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: scudamores});
+    let marker = new google.maps.Marker({position: scudamores, map:map});
+  }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZIdec-RQvhD8uwwO-EAuLxulb6wLA20o&callback=initMap">
+      </script>
+  </body>
+</html>

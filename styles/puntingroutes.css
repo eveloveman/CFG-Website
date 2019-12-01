@@ -1,0 +1,11 @@
+h1{
+  text-align: center;
+}
+
+.theBacks img{
+  height: 100%;
+  float: left;
+}
+.theBacks p{
+  vertical-align: top;
+}
