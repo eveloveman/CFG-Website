@@ -30,12 +30,10 @@ h2{
   width: 50%;
   position: relative;
 }
-.column.right p{
-  font-size: 30;
-}
+
 .column.right p {
-  font-size: 30;
   position: absolute;
+  text-align: justify;
   top: 50%;
   left: 50%;
   margin-right: -50%;
@@ -47,13 +45,36 @@ h2{
   clear: both;
 }
 
-@media screen and (max-width:600px)
-{
-  .column{
-    width: 100%
-  }
-}
-
 h3{
   text-align: center;
+  font-size: 2rem;
+}
+
+.row.bottom{
+  margin: 100px;
+}
+.box{
+  float: left;
+  padding-top: :0;
+  padding-bottom: 10px;
+  padding-left: 50px;
+
+}
+
+.box.left{
+  width: 50%;
+  text-align: justify;
+}
+button{
+  background-color: red;
+}
+.box.right{
+  width: 50%;
+  position: relative;
+}
+
+.row.bottom:after{
+  content:"";
+  display: table;
+  clear: both;
 }

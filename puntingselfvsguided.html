@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>puntingselfvsguided</title>
-</head>
+  </head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/puntingselfvsguided.css">
 <body>
@@ -10,26 +10,45 @@
   <h2>Guided Tour</h2>
   <div class="row">
     <div class="column left">
-      <img src="guided.jpg" width="350px">
+      <img src="guidednew.jpg" width="500px">
   </div>
 
   <div class="column right">
-    <p> fkdssogjfspgjposrgsjdjvfdpgpfdjpijgfdioibhdgxodgjsrogjorsgorgüsgürsgürsigürig
-    jfdpogjpdogofgüfkgüsfigüfsigüfsigfsüigfiüfskgüpfsfüppkhüfsogüpfshofdohfühfsjh
-  fooghfsühfüsighüfpsgfüpsihüfpihüpfihüpfigüfighüfoskghüfsogh</p>
+    <p> A guided punting tour is a special and alternative way to get an overview
+    of Cambridge and the history of this amazing city. You relax in a punt and enjoy the view while a
+  trained guide takes you along the river Cam and provides you with lots of information
+and funny stories about the colleges. A guided tour is perfect if it's your first
+time in Cambridge and you want to do some typical touristic things.</p>
   </div>
 </div>
 
 <h3>Self-Punting</h3>
 <div class="row bottom">
-  <div class="column bottoml">
-    <p> Self puntin is bla bla bla bla</p>
+  <div class="box left">
+    <p> Self puntin is a very fun and exciting way to explore the river Cam and its surroundings.
+    You may not be as quick as on a guided tour, but therefor FUN is guaranteed. It is a perfect
+  activity you can do with your family or friends. You can even have a little competition on
+who is the best punter. But careful, the punting platform can get very... </p>
+<button type="button" background="red" onmouseover="doMouseOver()" onmouseout="MouseAway()" class="btn btn-slippery">SLIPPERY</button>
 </div>
 
-<div class="column right">
-  <img src="selfpunting.jpg" width="350px">
+<div class="box right">
+  <img src="selfpunting.jpg" ID="img1" width="400px">
+
+<script language="javascript">
+  function doMouseOver(){
+    document.getElementById("img1").src="accident.jpg";
+  }
+</script>
+
+<script language="javascript">
+  function MouseAway(){
+    document.getElementById("img1").src="selfpunting.jpg";
+  }
+</script>
 
 </div>
 </div>
+
 </body>
 </html>
