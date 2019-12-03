@@ -10,6 +10,7 @@
       }
     </style>
   </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/puntingcompanies.css">
 
   <body>
@@ -46,8 +47,19 @@
     let map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: scudamores});
     let marker = new google.maps.Marker({position: scudamores, map:map});
+
+  map.addListener('center_changed', function(){
+    window.setTimeout(function(){
+      map.panTo(marker.getPosition());
+    }, 300);
+  });
+
+  marker.addListener('click', function(){
+    map.setZoom(15);
+    map.setCenter(marker.getPosition());
+  })
   }
-    </script>
+  </script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZIdec-RQvhD8uwwO-EAuLxulb6wLA20o&callback=initMap">
       </script>

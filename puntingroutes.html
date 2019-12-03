@@ -3,15 +3,22 @@
   <head>
     <title>puntingroutes</title>
   </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/puntingroutes.css">
   <body>
     <h1>Punting Routes</h1>
-    <p> When starting from Mill Lane you can choose between 2 different routes,
-      the college backs or the journey towards Grantchester. </p>
-      <div class theBacks>
-        <p><img src="the backs.jpg" width=500px>
-        <span>Punting along the College Backs offers a beautiful view <br>of the College
-          Gardens. The colleges you pass are:
+    <h2> When starting from Mill Lane you can choose between 2 different routes,
+      the college backs or the journey towards Grantchester. </h2>
+    <div class="toptext">
+      <p>Punting along the College Backs offers a beautiful view of the College
+      Gardens. The colleges you pass are:</p>
+    </div>
+      <div class="row">
+        <div class="column left">
+          <img src="the backs.jpg" width=1000px>
+      </div>
+      <div class="column right">
+        <p>
           <ul>
             <li>Queens</li>
             <li>Kings</li>
@@ -20,8 +27,27 @@
             <li>Trinity</li>
             <li>St Johns</li>
             <li>Magdalene</li>
-          </span>
+          </ul>
         </p>
       </div>
+    </div>
+    <div class="row bottom">
+    <div class ="box left">
+      <p>If you don't punt towards the Backs but into the opposite direction you
+      are going towards the village of Grantchester. This route, which is less busy than the Backs, offers beautiful sights
+    of nature, including green fields and some cows grassing on them. But be aware
+  of the swans, they might be
+  <button type="button" onclick="appear()"class="btn btn-aggressive">AGRESSIVE...</button> </p>
+  <img id="Swan" src="swan.jpg" width="400">
+  <script>
+  function appear(){
+    document.getElementById("Swan").style.visibility="visible";
+  };
+  </script>
+    </div>
+    <div class="box right">
+      <img src="grantchester1.jpg" width="200" height="500">
+    </div>
+  </div>
   </body>
 </html>

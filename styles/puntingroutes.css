@@ -1,11 +1,76 @@
+*{
+  box-sizing: border-box;
+}
+
 h1{
   text-align: center;
 }
-
-.theBacks img{
-  height: 100%;
-  float: left;
+h2{
+  text-align: center;
+  font-size: 1.5rem;
 }
-.theBacks p{
-  vertical-align: top;
+
+.toptext{
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  font-size: 1.2rem
+}
+ ul{
+   font-size: 1.2rem
+ }
+.row{
+  margin: 50px;
+}
+
+.column{
+  float: left;
+  padding: 10px;
+}
+
+.column.left{
+  width: 85%;
+}
+
+.column.right{
+  width: 15%;
+  position: relative;
+}
+
+.column.right p{
+  position: absolute;
+  text-align: justify;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+.row.bottom{
+  margin:100px;
+}
+
+.column{
+  float: left;
+  padding: 10px
+}
+
+.box{
+  width: 50%
+}
+
+.box.left{
+  width: 50%;
+  padding-right: 50px;
+  padding-left: 20px;
+  text-align: justify;
+  font-size: 1.2rem
+}
+
+button{
+  font-size: 2rem
+}
+#Swan {
+  visibility: hidden
 }
