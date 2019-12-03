@@ -1,8 +1,9 @@
 let button = document.querySelector('button')
 let img = document.querySelector('img')
+let pinkdress = img.src
 button.addEventListener('click', function changeimg (){
   console.log(img.src)
-  if (img.src=="file:///Users/eveloveman/Documents/CAMBRIDGE/Code%20First/coding_course/CFG-Website/pinkdress.jpg"){
+  if (img.src==pinkdress){
       img.src= "greysuit.jpg"
   } else {
     img.src="pinkdress.jpg"
